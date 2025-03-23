@@ -1,0 +1,129 @@
+{
+    "models": {
+        "my_first_dbt_model": {
+            "schema": "my_test_my_test",
+            "database": "dbt_sample",
+            "description": "A starter dbt model",
+            "columns": {
+                "id": {
+                    "name": "id"
+                }
+            },
+            "project": "my_test_project"
+        },
+        "my_second_dbt_model": {
+            "schema": "my_test",
+            "database": "dbt_sample",
+            "description": "A starter dbt model",
+            "columns": {
+                "id": {
+                    "name": "id"
+                }
+            },
+            "project": "my_test_project"
+        },
+        "analytics_orders": {
+            "schema": "analytics_schema_analytics_schema",
+            "database": "dbt_sample",
+            "description": "Aggregated order data combining ecommerce and test project datasets.",
+            "columns": {
+                "order_id": {
+                    "name": "order_id"
+                },
+                "customer_id": {
+                    "name": "customer_id"
+                },
+                "test_project_id": {
+                    "name": "test_project_id"
+                },
+                "some_metric": {
+                    "name": "some_metric"
+                }
+            },
+            "project": "analytics_project"
+        },
+        "stg_orders": {
+            "schema": "my_test",
+            "database": "dbt_sample",
+            "description": "Staging model for raw orders data",
+            "columns": {
+                "order_id": {
+                    "name": "order_id"
+                },
+                "customer_id": {
+                    "name": "customer_id"
+                },
+                "order_date": {
+                    "name": "order_date"
+                },
+                "status": {
+                    "name": "status"
+                }
+            },
+            "project": "my_test_project"
+        },
+        "stg_campaigns": {
+            "schema": "my_test",
+            "database": "dbt_sample",
+            "description": "",
+            "columns": {},
+            "project": "my_test_project"
+        }
+    },
+    "sources": {
+        "stg_orders": {
+            "schema": "",
+            "database": "",
+            "description": "",
+            "columns": {},
+            "source_name": "ecommerce_models",
+            "project": "analytics_project"
+        },
+        "my_first_dbt_model": {
+            "schema": "",
+            "database": "",
+            "description": "",
+            "columns": {},
+            "source_name": "test_project_models",
+            "project": "analytics_project"
+        },
+        "raw_orders": {
+            "schema": "",
+            "database": "",
+            "description": "",
+            "columns": {},
+            "source_name": "ecommerce_source",
+            "project": "ecommerce_project"
+        },
+        "raw_transactions": {
+            "schema": "",
+            "database": "",
+            "description": "",
+            "columns": {},
+            "source_name": "my_test_project",
+            "project": "my_test_project"
+        }
+    },
+    "lineage": [
+        {
+            "from": "my_first_dbt_model",
+            "to": "my_second_dbt_model"
+        },
+        {
+            "from": "my_first_dbt_model",
+            "to": "analytics_orders"
+        },
+        {
+            "from": "stg_orders",
+            "to": "analytics_orders"
+        },
+        {
+            "from": "raw_orders",
+            "to": "stg_orders"
+        },
+        {
+            "from": "raw_transactions",
+            "to": "my_first_dbt_model"
+        }
+    ]
+}
