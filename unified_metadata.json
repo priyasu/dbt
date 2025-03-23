@@ -3,7 +3,6 @@
         "my_first_dbt_model": {
             "schema": "my_test_my_test",
             "database": "dbt_sample",
-            "description": "A starter dbt model",
             "columns": {
                 "id": {
                     "name": "id"
@@ -14,7 +13,6 @@
         "my_second_dbt_model": {
             "schema": "my_test",
             "database": "dbt_sample",
-            "description": "A starter dbt model",
             "columns": {
                 "id": {
                     "name": "id"
@@ -25,7 +23,6 @@
         "analytics_orders": {
             "schema": "analytics_schema_analytics_schema",
             "database": "dbt_sample",
-            "description": "Aggregated order data combining ecommerce and test project datasets.",
             "columns": {
                 "order_id": {
                     "name": "order_id"
@@ -45,7 +42,6 @@
         "stg_orders": {
             "schema": "my_test",
             "database": "dbt_sample",
-            "description": "Staging model for raw orders data",
             "columns": {
                 "order_id": {
                     "name": "order_id"
@@ -65,7 +61,6 @@
         "stg_campaigns": {
             "schema": "my_test",
             "database": "dbt_sample",
-            "description": "",
             "columns": {},
             "project": "my_test_project"
         }
@@ -74,7 +69,6 @@
         "stg_orders": {
             "schema": "",
             "database": "",
-            "description": "",
             "columns": {},
             "source_name": "ecommerce_models",
             "project": "analytics_project"
@@ -82,7 +76,6 @@
         "my_first_dbt_model": {
             "schema": "",
             "database": "",
-            "description": "",
             "columns": {},
             "source_name": "test_project_models",
             "project": "analytics_project"
@@ -90,7 +83,6 @@
         "raw_orders": {
             "schema": "",
             "database": "",
-            "description": "",
             "columns": {},
             "source_name": "ecommerce_source",
             "project": "ecommerce_project"
@@ -98,7 +90,6 @@
         "raw_transactions": {
             "schema": "",
             "database": "",
-            "description": "",
             "columns": {},
             "source_name": "my_test_project",
             "project": "my_test_project"

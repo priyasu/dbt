@@ -28,17 +28,13 @@ def find_dbt_projects(parent_dir):
     print(f"Found {len(projects)} dbt projects: {', '.join(projects.keys())}")
     return projects
 
-def strip_column_descriptions(columns_data):
-    """Remove descriptions from column metadata while keeping column names."""
-    if not columns_data:
-        return {}
-        
-    stripped_columns = {}
-    for col_name, col_data in columns_data.items():
-        # Just keep the column name without any descriptions
-        stripped_columns[col_name] = {"name": col_data.get("name", col_name)}
-    
-    return stripped_columns
+def extract_column_names(columns_data):
+    """Extract just the column names without any descriptions."""
+    simplified_columns = {}
+    if columns_data:
+        for col_name in columns_data.keys():
+            simplified_columns[col_name] = {"name": col_name}
+    return simplified_columns
 
 def load_metadata(project_name, project_path, metadata):
     """Loads manifest.json from a dbt project and extracts metadata."""
@@ -61,8 +57,7 @@ def load_metadata(project_name, project_path, metadata):
                     metadata["models"][model_name] = {
                         "schema": node_data.get("schema", ""),
                         "database": node_data.get("database", ""),
-                        "description": node_data.get("description", ""),
-                        "columns": strip_column_descriptions(node_data.get("columns", {})),
+                        "columns": extract_column_names(node_data.get("columns", {})),
                         "original_id": node_name,  # Store the original node id for later reference
                         "project": project_name  # Keep track of which project this came from
                     }
@@ -91,8 +86,7 @@ def load_metadata(project_name, project_path, metadata):
                                 metadata["sources"][table_name] = {
                                     "schema": source_data.get("schema", ""),
                                     "database": source_data.get("database", ""),
-                                    "description": table_info.get("description", ""),
-                                    "columns": strip_column_descriptions(table_info.get("columns", {})),
+                                    "columns": extract_column_names(table_info.get("columns", {})),
                                     "source_name": source_name,
                                     "original_id": f"source.{project_name}.{source_name}.{table_name}",
                                     "project": project_name
@@ -105,8 +99,7 @@ def load_metadata(project_name, project_path, metadata):
                                     metadata["sources"][table_name] = {
                                         "schema": source_data.get("schema", ""),
                                         "database": source_data.get("database", ""),
-                                        "description": table.get("description", ""),
-                                        "columns": strip_column_descriptions(table.get("columns", {})),
+                                        "columns": extract_column_names(table.get("columns", {})),
                                         "source_name": source_name,
                                         "original_id": f"source.{project_name}.{source_name}.{table_name}",
                                         "project": project_name
@@ -129,7 +122,6 @@ def load_metadata(project_name, project_path, metadata):
                             metadata["sources"][table_name] = {
                                 "schema": "",  # Can't determine schema from this structure
                                 "database": "", # Can't determine database from this structure 
-                                "description": "",
                                 "columns": {},
                                 "source_name": source_name,
                                 "original_id": node_id,

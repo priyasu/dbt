@@ -1,0 +1,6 @@
+order_id,customer_id,order_date,status
+1001,101,2023-01-01,completed
+1002,102,2023-01-02,shipped
+1003,103,2023-01-03,processing
+1004,101,2023-01-04,shipped
+1005,104,2023-01-05,completed 

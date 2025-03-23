@@ -2,8 +2,6 @@ version: 2
 
 sources:
   - name: my_test_project
-    database: dbt_sample
-    schema: public    # raw table is in public
+    schema: public
     tables:
       - name: raw_transactions
-        description: "Raw transactions table from the transactional system"

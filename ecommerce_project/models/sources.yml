@@ -1,8 +1,7 @@
 version: 2
 
 sources:
-  - name: ecommerce_source  # Logical source name
-    schema: public  # Where raw_orders exists
+  - name: ecommerce_source
+    schema: public
     tables:
-      - name: raw_orders  # Actual table name
-        description: "Raw order data from the transactional system"
+      - name: raw_orders

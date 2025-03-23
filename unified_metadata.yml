@@ -21,7 +21,6 @@ models:
       test_project_id:
         name: test_project_id
     database: dbt_sample
-    description: Aggregated order data combining ecommerce and test project datasets.
     project: analytics_project
     schema: analytics_schema_analytics_schema
   my_first_dbt_model:
@@ -29,7 +28,6 @@ models:
       id:
         name: id
     database: dbt_sample
-    description: A starter dbt model
     project: my_test_project
     schema: my_test_my_test
   my_second_dbt_model:
@@ -37,13 +35,11 @@ models:
       id:
         name: id
     database: dbt_sample
-    description: A starter dbt model
     project: my_test_project
     schema: my_test
   stg_campaigns:
     columns: {}
     database: dbt_sample
-    description: ''
     project: my_test_project
     schema: my_test
   stg_orders:
@@ -57,35 +53,30 @@ models:
       status:
         name: status
     database: dbt_sample
-    description: Staging model for raw orders data
     project: my_test_project
     schema: my_test
 sources:
   my_first_dbt_model:
     columns: {}
     database: ''
-    description: ''
     project: analytics_project
     schema: ''
     source_name: test_project_models
   raw_orders:
     columns: {}
     database: ''
-    description: ''
     project: ecommerce_project
     schema: ''
     source_name: ecommerce_source
   raw_transactions:
     columns: {}
     database: ''
-    description: ''
     project: my_test_project
     schema: ''
     source_name: my_test_project
   stg_orders:
     columns: {}
     database: ''
-    description: ''
     project: analytics_project
     schema: ''
     source_name: ecommerce_models

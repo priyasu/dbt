@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: ecommerce_source
+    database: dbt_sample
+    schema: ecommerce
+    tables:
+      - name: raw_orders 

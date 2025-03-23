@@ -5,18 +5,14 @@ models:
     description: "Aggregated order data combining ecommerce and test project datasets."
     columns:
       - name: order_id
-        description: "Unique identifier for the order."
         tests:
           - not_null
           - unique
-
+      
       - name: customer_id
-        description: "Customer identifier linked across projects."
         tests:
           - not_null
-
+      
       - name: test_project_id
-        description: "ID from my_test_project's model."
-        
+      
       - name: some_metric
-        description: "Amount from my_test_project's model."
