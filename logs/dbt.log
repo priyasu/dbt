@@ -1,0 +1,192 @@
+[0m16:35:48.006565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E9AF7A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E99071590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E9BC30F50>]}
+
+
+============================== 16:35:48.031202 | da36362f-1a7d-40de-88f7-0bc635e908c3 ==============================
+[0m16:35:48.031202 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:35:48.032233 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\karak\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init my_test_project', 'send_anonymous_usage_stats': 'True'}
+[0m16:35:48.056514 [debug] [MainThread]: Starter project path: C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m16:35:48.095249 [info ] [MainThread]: 
+Your new dbt project "my_test_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:35:48.096147 [info ] [MainThread]: Setting up your profile.
+[0m16:39:09.007271 [info ] [MainThread]: Profile my_test_project written to C:\Users\karak\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:39:09.010011 [debug] [MainThread]: Command `dbt init` succeeded at 16:39:09.009608 after 201.25 seconds
+[0m16:39:09.011488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E9C5C9F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E9C1A7770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E9BFAF020>]}
+[0m16:39:09.013122 [debug] [MainThread]: Flushing usage events
+[0m16:39:10.489556 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:39:46.479493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F396BA7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F377B5590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F3A360F50>]}
+
+
+============================== 16:39:46.489074 | fce19c68-93c7-4965-b095-da45f9f3e16c ==============================
+[0m16:39:46.489074 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:39:46.490116 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\karak\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:39:46.512070 [info ] [MainThread]: dbt version: 1.9.3
+[0m16:39:46.513041 [info ] [MainThread]: python version: 3.13.1
+[0m16:39:46.513957 [info ] [MainThread]: python path: C:\Users\karak\dbt_cursor\dbt-env\Scripts\python.exe
+[0m16:39:46.514445 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m16:39:46.584452 [info ] [MainThread]: Using profiles dir at C:\Users\karak\.dbt
+[0m16:39:46.585326 [info ] [MainThread]: Using profiles.yml file at C:\Users\karak\.dbt\profiles.yml
+[0m16:39:46.585919 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\karak\dbt_cursor\dbt_project.yml
+[0m16:39:46.586527 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m16:39:46.587429 [debug] [MainThread]: Command `dbt debug` failed at 16:39:46.587294 after 0.36 seconds
+[0m16:39:46.587746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F3A8F2C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F3AE415B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F3A8C6140>]}
+[0m16:39:46.588097 [debug] [MainThread]: Flushing usage events
+[0m16:39:48.609041 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:40:57.224996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F89024A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F88E341590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F890F00F50>]}
+
+
+============================== 16:40:57.233539 | ccb31c42-72e3-4e73-a9a3-cb9c55ff95c8 ==============================
+[0m16:40:57.233539 [info ] [MainThread]: Running with dbt=1.9.3
+[0m16:40:57.234449 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\karak\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:40:57.259661 [info ] [MainThread]: dbt version: 1.9.3
+[0m16:40:57.260376 [info ] [MainThread]: python version: 3.13.1
+[0m16:40:57.260942 [info ] [MainThread]: python path: C:\Users\karak\dbt_cursor\dbt-env\Scripts\python.exe
+[0m16:40:57.261446 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m16:40:57.331649 [info ] [MainThread]: Using profiles dir at C:\Users\karak\.dbt
+[0m16:40:57.332464 [info ] [MainThread]: Using profiles.yml file at C:\Users\karak\.dbt\profiles.yml
+[0m16:40:57.332990 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\karak\dbt_cursor\dbt_project.yml
+[0m16:40:57.334387 [info ] [MainThread]: adapter type: postgres
+[0m16:40:57.334931 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:40:57.335467 [info ] [MainThread]: Configuration:
+[0m16:40:57.335955 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:40:57.336400 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:40:57.336916 [info ] [MainThread]: Required dependencies:
+[0m16:40:57.337644 [debug] [MainThread]: Executing "git --help"
+[0m16:40:57.392328 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:40:57.392833 [debug] [MainThread]: STDERR: "b''"
+[0m16:40:57.393247 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:40:57.393899 [info ] [MainThread]: Connection:
+[0m16:40:57.394473 [info ] [MainThread]:   host: localhost
+[0m16:40:57.394965 [info ] [MainThread]:   port: 5434
+[0m16:40:57.395436 [info ] [MainThread]:   user: postgres
+[0m16:40:57.396201 [info ] [MainThread]:   database: dbt_sample
+[0m16:40:57.396884 [info ] [MainThread]:   schema: public
+[0m16:40:57.397598 [info ] [MainThread]:   connect_timeout: 10
+[0m16:40:57.398396 [info ] [MainThread]:   role: None
+[0m16:40:57.399020 [info ] [MainThread]:   search_path: None
+[0m16:40:57.399599 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:40:57.400390 [info ] [MainThread]:   sslmode: None
+[0m16:40:57.400992 [info ] [MainThread]:   sslcert: None
+[0m16:40:57.401581 [info ] [MainThread]:   sslkey: None
+[0m16:40:57.402059 [info ] [MainThread]:   sslrootcert: None
+[0m16:40:57.402496 [info ] [MainThread]:   application_name: dbt
+[0m16:40:57.402948 [info ] [MainThread]:   retries: 1
+[0m16:40:57.403737 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:40:57.575023 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:41:00.004467 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:41:00.004859 [debug] [MainThread]: On debug: select 1 as id
+[0m16:41:00.005168 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:41:00.068371 [debug] [MainThread]: SQL status: SELECT 1 in 0.063 seconds
+[0m16:41:00.069390 [debug] [MainThread]: On debug: Close
+[0m16:41:00.069785 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:41:00.070465 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:41:00.071041 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\karak\dbt_cursor\dbt_project.yml> not found
+
+[0m16:41:00.071970 [debug] [MainThread]: Command `dbt debug` failed at 16:41:00.071807 after 3.03 seconds
+[0m16:41:00.072470 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:41:00.072948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F891D2C3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F8919C79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F8914679B0>]}
+[0m16:41:00.073475 [debug] [MainThread]: Flushing usage events
+[0m16:41:01.547496 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:32:28.518587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B32A9A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B30B95590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B33740F50>]}
+
+
+============================== 18:32:28.527082 | 6cc5fd9e-8e36-408d-a56b-3d21e220a4d1 ==============================
+[0m18:32:28.527082 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:32:28.527953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\karak\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:32:28.528396 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\karak\dbt_cursor\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:32:28.529228 [debug] [MainThread]: Command `dbt run` failed at 18:32:28.529108 after 0.19 seconds
+[0m18:32:28.529566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B33C02190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B33C80050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B33ABE580>]}
+[0m18:32:28.529886 [debug] [MainThread]: Flushing usage events
+[0m18:32:29.719766 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:15:30.292584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028996A8A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028994B81590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028997730F50>]}
+
+
+============================== 10:15:30.302834 | f4e442d0-8174-4f77-8728-62662e17fdd4 ==============================
+[0m10:15:30.302834 [info ] [MainThread]: Running with dbt=1.9.3
+[0m10:15:30.303700 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\karak\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init .\\ecommerce_project\\', 'send_anonymous_usage_stats': 'True'}
+[0m10:15:38.844296 [error] [MainThread]: Encountered an error:
+
+[0m10:15:38.854903 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+  File "C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\dbt\task\init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+  File "C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\dbt\task\init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:15:38.857516 [debug] [MainThread]: Command `dbt init` failed at 10:15:38.857196 after 8.84 seconds
+[0m10:15:38.858925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028997BEFA80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028997CA03B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028997AAB020>]}
+[0m10:15:38.860608 [debug] [MainThread]: Flushing usage events
+[0m10:15:39.949373 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:15:57.314809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B4AA7A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B48B75590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B4B730F50>]}
+
+
+============================== 10:15:57.322952 | 29744ffe-482f-46c6-83ca-b910bc93ce1f ==============================
+[0m10:15:57.322952 [info ] [MainThread]: Running with dbt=1.9.3
+[0m10:15:57.323857 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\karak\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init ecommerce_project', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:15:57.344771 [info ] [MainThread]: A project called ecommerce_project already exists here.
+[0m10:15:57.346175 [debug] [MainThread]: Command `dbt init` succeeded at 10:15:57.345991 after 0.19 seconds
+[0m10:15:57.346698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B4BBEF6F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B4BC93E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023B4BAADF20>]}
+[0m10:15:57.347187 [debug] [MainThread]: Flushing usage events
+[0m10:15:58.586092 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:49:19.507149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F6C17A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F6A26D590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F6CE20F50>]}
+
+
+============================== 10:49:19.515558 | 9fe69174-3b91-4e93-b8bd-5d809bf8511f ==============================
+[0m10:49:19.515558 [info ] [MainThread]: Running with dbt=1.9.3
+[0m10:49:19.516634 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\karak\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init analytics_project', 'send_anonymous_usage_stats': 'True'}
+[0m10:49:19.546181 [debug] [MainThread]: Starter project path: C:\Users\karak\dbt_cursor\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m10:49:19.582212 [info ] [MainThread]: 
+Your new dbt project "analytics_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:49:19.583126 [info ] [MainThread]: Setting up your profile.
+[0m10:50:27.656299 [info ] [MainThread]: Profile analytics_project written to C:\Users\karak\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:50:27.659396 [debug] [MainThread]: Command `dbt init` succeeded at 10:50:27.659061 after 68.46 seconds
+[0m10:50:27.660807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F6D84DF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F6D397770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020F6D19F020>]}
+[0m10:50:27.662270 [debug] [MainThread]: Flushing usage events
+[0m10:50:28.604356 [debug] [MainThread]: An error was encountered while trying to flush usage events

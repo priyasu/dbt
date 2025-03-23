@@ -1,0 +1,27 @@
+# Project name must be lowercase and use underscores
+name: 'ecommerce_project'
+version: '1.0.0'
+
+# This tells dbt which profile to use (same as in profiles.yml)
+profile: 'ecommerce_project'
+
+# Directories where dbt looks for models, macros, etc.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Model configuration (applies defaults to all models in the project)
+models:
+  ecommerce_project:
+    # Config applies to all models inside models/staging/
+    staging:
+      +materialized: view  # Default materialization is a view
+    marts:
+      +materialized: table  # Fact tables stored as tables

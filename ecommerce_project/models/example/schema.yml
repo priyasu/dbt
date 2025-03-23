@@ -1,0 +1,33 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "Staging model for raw orders data in the e-commerce domain."
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order."
+      - name: customer_id
+        description: "Identifier for the customer placing the order."
+      - name: order_date
+        description: "Date when the order was placed."
+      - name: status
+        description: "Status of the order (e.g., completed, pending, shipped)."
