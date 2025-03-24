@@ -2,11 +2,15 @@ version: 2
 
 sources:
   - name: ecommerce_models
-    schema: ecommerce_ecommerce_schema
+    database: dbt_sample
+    schema: ecommerce_ecommerce_schema  # Updated based on dbt run output
     tables:
       - name: stg_orders
-        
+        description: "Staging orders data from the ecommerce project"
+
   - name: test_project_models
-    schema: my_test_my_test
+    database: dbt_sample
+    schema: my_test_my_test  # Updated based on dbt run output
     tables:
-      - name: my_first_dbt_model 
+      - name: my_first_dbt_model
+        description: "First model from the test project" 
